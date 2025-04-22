@@ -1,9 +1,7 @@
-main{
-    
-}
+
 
 .container_mae{
-    background-color: rgb(205, 205, 236);
+    background-color: rgb(7, 68, 10);
     /* height: 300px; */
     /* width: 300px; */
     display: flex;
@@ -13,7 +11,7 @@ main{
 }
 .card{
     /* border: red solid 2px; */
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(218, 203, 203);
     height: auto;
     width: 300px;
     margin: 10px;
@@ -33,17 +31,17 @@ main{
 }
 
 .botao{
-    border: 2px orangered solid;
+    border: 2px rgb(80, 0, 0) solid;
     border-radius: 5px;
     width: 200px;
-    color: orangered;
+    color: rgb(0, 0, 0);
     font-size: large;
     
 }
 /* muda cor do botao e do texto */
 .botao:hover{
     color: white;
-    background-color: orangered;
+    background-color: rgb(124, 0, 2);
 }
 a{
     text-decoration: none;
