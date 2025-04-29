@@ -5,22 +5,22 @@ body{
         "brac corp"
         "pern pern";
     grid-template-columns: 300px auto;
-    grid-template-rows: 300px 600px 300px;
+    grid-template-rows: 50px 1000px 300px;
 }
-
 header{
     grid-area: cabe;
-    background-color: rgb(159, 156, 232);
+    background-color: #fff3e2;
 }
 aside{
     grid-area: brac;
-    background-color: rgb(94, 36, 39);
+    background-color: #fff3e2;
+    position: sticky;
+
+    
 }
-main{
-    grid-area: corp;
-    background-color: rgb(174, 30, 200);
-}
+
 footer{
     grid-area: pern;
-    background-color: rgb(216, 149, 16);
+    background-color: blue;
 }
+  

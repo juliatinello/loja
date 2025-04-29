@@ -40,7 +40,7 @@
 }
 /* muda cor do botao e do texto */
 .botao:hover{
-    color: white;
+    color: #fff3e2;;
     background-color: rgb(124, 0, 2);
 }
 a{
