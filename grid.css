@@ -13,14 +13,12 @@ header{
 }
 aside{
     grid-area: brac;
-    background-color: #fff3e2;
+    background-color: #bb2636;
     position: sticky;
 
     
 }
 
-footer{
-    grid-area: pern;
+footer {
     background-color: blue;
 }
-  
