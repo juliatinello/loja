@@ -3,7 +3,7 @@ main{
 }
 
 .container_mae{
-    background-color: rgb(7, 7, 109);
+    background-color: #b2636b;
     /* height: 300px; */
     /* width: 300px; */
     display: flex;
@@ -27,18 +27,15 @@ main{
     align-items: center;
     flex-direction: column;
 }
-
 .card:hover{
     box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 .botao{
     border: 2px orangered solid;
     border-radius: 5px;
     width: 200px;
     color: orangered;
     font-size: large;
-    
 }
 /* muda cor do botao e do texto */
 .botao:hover{
@@ -50,5 +47,4 @@ a{
 }
 .item_venda{
     height: 180px;
-
 }
