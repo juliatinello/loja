@@ -105,21 +105,10 @@ nav a:hover {
     justify-content: end;
     align-items: center;
     flex-direction: column;
+    transition: transform 0.3s ease;
 }
 .card:hover{
-    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.botao{
-    border: 2px #019247;
-    border-radius: 5px;
-    width: 200px;
-    color: #019247;
-    font-size: large;
-}
-/* muda cor do botao e do texto */
-.botao:hover{
-    color: white;
-    background-color: #019247;
+    transform: scale(1.05);
 }
 a{
     text-decoration: none;
@@ -127,36 +116,20 @@ a{
 .item_venda{
     height: 180px;
 }
-.card{
-    /* border: red solid 2px; */
-    background-color: rgb(255, 255, 255);
-    height: auto;
-    width: 300px;
-    margin: 10px;
-    padding: 10px;
-    color: rgb(20, 19, 19);
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-}
-.card:hover{
-    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
 .botao{
-    border: 2px #019247;
-    border-radius: 5px;
-    width: 200px;
-    color: #019247;
-    font-size: large;
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease; 
+  background-color: #019247;
+ list-style-type: none;
+ color: whitesmoke;
 }
 /* muda cor do botao e do texto */
 .botao:hover{
-    color: white;
-    background-color: #019247;
+    transform: scale(1.05);
 }
 a{
     text-decoration: none;
@@ -178,5 +151,35 @@ a{
 form{
     color: #f6ddb9;
     margin-top: 100px;
-    
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formulario{
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(20, 19, 19);
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+#concluido{
+    background-color: rgb(210, 224, 14);
+    height: auto;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(20, 19, 19);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
 }
