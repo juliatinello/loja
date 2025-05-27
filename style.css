@@ -1,5 +1,37 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "cabe cabe"
+        "brac corp"
+        "pern pern";
+        grid-template-columns: 250px auto;
+        grid-template-rows: 80px auto 50px;
+}
+header{
+    grid-area: cabe;
+    background-color: #fff3e2;
+    text-align: center;
+}
+aside{
+    grid-area: brac;
+    background-color: #fff3e2;
+    /* position: sticky; */
+}
+
+main{
+    grid-area: corp;
+    min-height: 800px;
+    background-color: #bb2636;
+}
+
+footer {
+    grid-area: pern;
+    background-color: #fff3e2;
+    height: 300px;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Serif bold Impact, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
     margin: 0px;
 }
 
@@ -8,7 +40,7 @@ a {
 }
 
 header {
-    background-color: blueviolet;
+    background-color: #fff3e2;
     padding: 10px;
 }
 
@@ -18,11 +50,11 @@ header {
 }
 
 nav {
-    height: 100%;
-    width: 250px;
+/*     height: 100%;
+    width: 250px; */
     background-color: #fff3e2;
-    position: fixed;
-    top: 0;
+/*     position: fixed;
+ */    top: 0;
     left: 0;
     z-index: 1;
     overflow: hidden;
@@ -38,4 +70,138 @@ nav a {
 nav a:hover {
     color: black;
     background-color: #f6ddb9;
+}
+
+.container_mae{
+    background-color: #bb2636;
+    /* height: 300px; */
+    /* width: 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    /* border: red solid 2px; */
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(20, 19, 19);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+}
+.item_venda{
+    height: 180px;
+}
+.botao{
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease; 
+  background-color: #019247;
+ list-style-type: none;
+ color: #fff3e2;
+}
+/* muda cor do botao e do texto */
+.botao:hover{
+    transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+}
+.item_venda{
+    height: 180px;
+}
+
+.logo{
+    height: 250px;
+    width: auto;
+}
+
+.registro {
+  background: #fff3e2; /* Define o fundo do container como branco para contraste com o fundo geral. */
+  padding: 30px; /* Adiciona espaço interno ao redor do conteúdo para melhor apresentação. */
+  border-radius: 15px; /* Arredonda as bordas para criar um visual moderno e amigável. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave para destaque. */
+  text-align: center; /* Centraliza o conteúdo dentro do container. */
+  max-width: 400px; /* Define uma largura máxima, mantendo o design responsivo. */
+  margin: 195px auto; /* Centraliza horizontalmente e adiciona espaço acima e abaixo do container. */
+}
+
+.registro h1 {
+  font-size: 2rem; /* Define um tamanho grande para o título, destacando-o. */
+  margin-bottom: 1.5rem; /* Adiciona espaço abaixo do título. */
+  color: #019247; /* Aplica uma cor laranja vibrante ao título para chamar a atenção. */
+  font-family: Serif bold Impact, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;/* Define a fonte como Arial, consistente com o resto do site. */
+}
+
+.formulario {
+  margin-bottom: 21px; /* Adiciona espaço abaixo do formulário para separá-lo de outros elementos. */
+  text-align: left; /* Alinha o conteúdo do formulário à esquerda. */
+}
+
+.formulario label {
+  display: block; /* Faz o label ocupar toda a largura disponível. */
+  font-weight: bold; /* Destaca o texto do label com negrito. */
+  margin-bottom: 0.5rem; /* Adiciona espaço abaixo do label para separar visualmente do campo de entrada. */
+}
+
+.formulario input {
+  width: 100%; /* Faz o campo de entrada ocupar toda a largura do container pai. */
+  padding: 0.8rem; /* Adiciona preenchimento interno para maior conforto visual e usabilidade. */
+  border: 1px solid #ddd; /* Aplica uma borda sutil e neutra ao redor do campo de entrada. */
+  border-radius: 5px; /* Arredonda as bordas do campo para um design moderno. */
+  font-size: 1rem; /* Define o tamanho do texto no campo de entrada para legibilidade. */
+  box-sizing: border-box; /* Garante que bordas e preenchimento estejam inclusos na largura total do campo. */
+}
+
+.formulario input:focus {
+  border-color: #019247; /* Altera a cor da borda ao focar no campo para indicar interatividade. */
+  outline: none; /* Remove o contorno padrão do navegador ao focar. */
+  box-shadow: 0 0 5px rgba(0, 126, 0, 0.5); /* Adiciona uma leve sombra laranja ao focar, destacando o campo. */
+}
+
+.finalizado {
+  width: 100%; /* Faz o botão ocupar toda a largura disponível no container pai. */
+  padding: 10px; /* Adiciona espaçamento interno ao botão para maior clicabilidade e estética. */
+  background: #019247; /* Define um fundo laranja vibrante para o botão. */
+  color: #fff; /* Define a cor do texto como branco, garantindo alto contraste com o fundo. */
+  font-size: 16px; /* Define um tamanho de fonte padrão, legível e consistente. */
+  border: none; /* Remove qualquer borda padrão do botão. */
+  border-radius: 5px; /* Arredonda as bordas para um visual moderno e amigável. */
+  cursor: pointer; /* Altera o cursor para o estilo de "mãozinha" ao passar sobre o botão, indicando interatividade. */
+  transition: background 0.3s ease; /* Adiciona uma transição suave ao mudar a cor de fundo quando passa o cursor do mouse. */
+}
+
+.finalizado:hover {
+  background: #007237; /* Escurece a cor do fundo quando passa o cursor do mouse, indicando que o botão é interativo. */
+}
+
+label {
+  display: block; /* Garante que cada label ocupe uma linha inteira, facilitando a legibilidade. */
+  font-weight: bold; /* Destaca o texto do label com negrito. */
+  margin-bottom: 8px; /* Adiciona espaço abaixo do label para separar visualmente dos campos de entrada. */
+}
+input {
+  width: 100%; /* Faz o campo de entrada ocupar toda a largura disponível no container pai. */
+  padding: 10px; /* Adiciona espaçamento interno para conforto visual e usabilidade. */
+  font-size: 16px; /* Define um tamanho de fonte legível para o texto dentro do campo. */
+  border: 1px solid #ccc; /* Aplica uma borda cinza clara, suave e discreta. */
+  border-radius: 4px; /* Arredonda levemente as bordas para um design moderno e amigável. */
 }

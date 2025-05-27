@@ -1,9 +1,6 @@
-main{
-    
-}
 
 .container_mae{
-    background-color: #b2636b;
+    background-color: #bb2636;
     /* height: 300px; */
     /* width: 300px; */
     display: flex;
@@ -31,16 +28,16 @@ main{
     box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .botao{
-    border: 2px orangered solid;
+    border: 2px #019247;
     border-radius: 5px;
     width: 200px;
-    color: orangered;
+    color: #019247;
     font-size: large;
 }
 /* muda cor do botao e do texto */
 .botao:hover{
     color: white;
-    background-color: orangered;
+    background-color: #019247;
 }
 a{
     text-decoration: none;
