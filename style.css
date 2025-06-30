@@ -205,3 +205,38 @@ input {
   border: 1px solid #ccc; /* Aplica uma borda cinza clara, suave e discreta. */
   border-radius: 4px; /* Arredonda levemente as bordas para um design moderno e amigável. */
 }
+.card2{
+    /* border: red solid 2px; */
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    margin: 250px;
+    padding: 20px;
+    color: rgb(20, 19, 19);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.rodape{
+    text-align: center;
+}
+.botao2{
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease; 
+  background-color: #019247;
+ list-style-type: none;
+ color: #fff3e2;
+}
+/* muda cor do botao e do texto */
+.botao2:hover{
+    transform: scale(1.05);
+}
