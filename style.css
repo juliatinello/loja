@@ -248,7 +248,7 @@ input {
 }
 .card4{
     background-color: rgb(255, 255, 255);
-    height: 280px;
+    height: 250px;
     width: 250px;
     margin-top: 250px;
     margin-left: auto;
@@ -262,7 +262,14 @@ input {
     align-items: right;
     flex-direction: right;
     transition: transform 0.3s ease;
-    font-size: larger;
+}
+.qr_code{
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    padding: auto;
+    flex-direction: center;
+    border-radius: 5px;
 }
 .carrinho{
     height: 40px;
